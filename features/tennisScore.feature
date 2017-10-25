@@ -37,3 +37,13 @@ Scenario:
 		And pulso el boton "J1"
 		And pulso el boton "J1"
 		Then el score debera estar en "30 0"
+
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And el score muestre "30 0"
+		And pulso el boton "RESTART"
+		And pulso el boton "START"
+		Then el score debera estar en "0 iguales"
