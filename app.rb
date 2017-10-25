@@ -1,5 +1,5 @@
 require 'sinatra'
-require('.\lib\tennisGame')
+require('./lib/tennisGame')
 
 get '/' do
 	$j1 = Player.new("j1")
