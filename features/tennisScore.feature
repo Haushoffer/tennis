@@ -56,6 +56,13 @@ Scenario:
 Scenario:
 		Given visito la pagina de inicio
 		When pulso el boton "START"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		Then el score debera estar en "0 40"
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
 		And pulso el boton "J1"
 		And pulso el boton "J1"
 		And pulso el boton "J1"

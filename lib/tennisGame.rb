@@ -48,7 +48,13 @@ class TennisGame
     if @player_one.points == @player_two.points and @player_one.points<3 and @player_two.points<3
         return "#{@player_one.score} iguales"
     end
-  
+  	if @player_one.points == 3 and @player_two.points < 3
+       return "#{@player_one.score} #{@player_two.score}"
+    end
+	if @player_two.points == 3 and @player_one.points < 3
+       return "#{@player_one.score} #{@player_two.score}"
+    end
+
     if @player_one.points == 3 and @player_two.points == 3
        return "deuce"
     end
