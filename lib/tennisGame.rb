@@ -50,11 +50,21 @@ class TennisGame
     end
   
     if @player_one.points == 3 and @player_two.points == 3
-       return 'deuce'
-    elsif (@player_one.points == @player_two.points + 1) and (@player_two.points >=3)
+       return "deuce"
+    end
+    if (@player_one.points == @player_two.points + 1) and (@player_two.points >=3)
         return "Ventaja #{@player_one.name}"
-    elsif (@player_one.points >= 4) and (@player_one.points >= (@player_two.points + 2))
+
+    end
+    if (@player_one.points >= 4) and (@player_one.points >= (@player_two.points + 2))
        return "Game #{@player_one.name}"
+    end
+	if (@player_two.points == @player_one.points + 1) and (@player_one.points >=3)
+        return "Ventaja #{@player_two.name}"
+    
+    end
+    if (@player_two.points >= 4) and (@player_two.points >= (@player_one.points + 2))
+       return "Game #{@player_two.name}"
     end
   end
 end

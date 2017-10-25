@@ -37,6 +37,54 @@ Scenario:
 		And pulso el boton "J1"
 		And pulso el boton "J1"
 		Then el score debera estar en "30 0"
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		Then el score debera estar en "Game j1"
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		Then el score debera estar en "Game j2"
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J1"
+		Then el score debera estar en "Ventaja j1"
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J2"
+		Then el score debera estar en "Ventaja j2"
+Scenario:
+		Given visito la pagina de inicio
+		When pulso el boton "START"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J2"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		And pulso el boton "J1"
+		Then el score debera estar en "deuce"
 
 Scenario:
 		Given visito la pagina de inicio
