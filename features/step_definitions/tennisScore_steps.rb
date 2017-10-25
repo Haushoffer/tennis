@@ -5,3 +5,10 @@ end
 Then(/^deberia mostrar el mensaje "(.*)"$/) do |mensajeInicial|
   last_response.body.should =~ /#{mensajeInicial}/m
 end
+
+Then(/^el score debera estar en "(.*)"$/) do |mensajeScore|
+  last_response.body.should =~ /#{mensajeScore}/m
+end
+When (/^pulso el boton "(.*)"$/) do |boton|
+  click_button(boton)
+end
